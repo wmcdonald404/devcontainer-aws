@@ -8,8 +8,13 @@
 	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
 	// "updateContentCommand": ".devcontainer/bin/updateContentCommand.sh",
 	"containerEnv": {
-		"OSH_THEME": "font"
+		"OSH_THEME": "font",
+		"AWS_PAGER": ""
 	},
+	"mounts": [
+		// https://github.com/microsoft/vscode-remote-release/issues/7147#issuecomment-1237779733
+		"source=${localEnv:HOME}/.aws,target=/root/.aws,type=bind,readonly"
+		],
 	"customizations": {
 			"vscode": {
 				"extensions": [

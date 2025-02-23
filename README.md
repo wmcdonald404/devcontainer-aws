@@ -1,2 +1,11 @@
 # devcontainer-aws
-A basic AWS Podman &amp; UBI devcontainer with useful tooling.
+AWS devcontainer built on Podman and Fedora.
+
+# contents
+- fedora 41
+- git 
+- gh 
+- glab 
+- awscli2
+- oh-my-bash
+- amazonwebservices.aws-toolkit-vscode
